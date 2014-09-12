@@ -1,28 +1,23 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+BANDAGRAM
 
-Things you may want to cover:
+2 types of users
+ -Fans
+    *Login and upload pictures from shows
+    *Upload pictures
+        +Band tags
+        +Show date
+        +City/location
+    *Comments under pictures, 140 character max for example
+    *Rank pictures from other friends/users
 
-* Ruby version
+ -Bands
+    *Login and view pictures fans tagged them in
+    *Endorse the pictures they like with a "star"
+    *Upload their own pictures from shows to their profile as well
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+***Searches by band name, show date, city/location, etc.
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
