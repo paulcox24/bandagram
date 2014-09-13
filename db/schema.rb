@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140913163453) do
+=======
+ActiveRecord::Schema.define(version: 20140913172307) do
+>>>>>>> origin/preston/picture_model
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +25,14 @@ ActiveRecord::Schema.define(version: 20140913163453) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+=======
+  create_table "pictures", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+>>>>>>> origin/preston/picture_model
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
