@@ -4,6 +4,6 @@ class StaticPagesController < ApplicationController
   end
 
   def index
-    # @pic = 
+
   end
 end
