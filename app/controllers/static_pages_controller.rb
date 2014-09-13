@@ -6,4 +6,9 @@ class StaticPagesController < ApplicationController
   def index
 
   end
+
+  def pic_list
+    @pics = current_user.pictures.all
+  end
+
 end

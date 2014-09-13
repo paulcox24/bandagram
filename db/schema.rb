@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140913201321) do
     t.date     "date_taken"
     t.string   "location"
     t.string   "band"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "pic_file_name"
@@ -27,6 +28,8 @@ ActiveRecord::Schema.define(version: 20140913201321) do
     t.integer  "pic_file_size"
     t.datetime "pic_updated_at"
   end
+
+  add_index "pictures", ["user_id"], name: "index_pictures_on_user_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

@@ -4,6 +4,7 @@ class Pictures < ActiveRecord::Migration
       t.date :date_taken
       t.string :location
       t.string :band
+      t.references :user, index: true
 
       t.timestamps :built_at
     end

@@ -11,6 +11,19 @@
     </div>
   <% end %>
 
+  <div>
+    <%= f.file_field :pic %></div>
+
+    <div><%= f.label :date_taken %>
+    <%= f.month_field :date_taken %></div>
+
+
+    <div><%= f.label :band %>
+    <%= f.text_field :band %></div>
+
+  <div><%= f.label :location %> <br />
+    <%= f.text_field :location %></div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,4 +1,5 @@
 class PicturesController < ApplicationController
+  # before_save :find_user
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
 
   # GET /pictures
@@ -21,6 +22,7 @@ class PicturesController < ApplicationController
 
   # POST /pictures
   def create
+    
     @picture = Picture.new(picture_params)
 
     if @picture.save
@@ -51,8 +53,12 @@ class PicturesController < ApplicationController
       @picture = Picture.find(params[:id])
     end
 
+    def find_user
+      
+    end
+
     # Only allow a trusted parameter "white list" through.
     def picture_params
-      params[:picture]
+      params.require(:picture).permit(:date_taken, :location, :pic, :band, :user_id)
     end
 end
